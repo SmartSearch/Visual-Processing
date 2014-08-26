@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simple_camera", "simple_camera.vcxproj", "{BE7D5367-4694-4529-817E-B4F13EB4C49A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE7D5367-4694-4529-817E-B4F13EB4C49A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE7D5367-4694-4529-817E-B4F13EB4C49A}.Debug|Win32.Build.0 = Debug|Win32
+		{BE7D5367-4694-4529-817E-B4F13EB4C49A}.Release|Win32.ActiveCfg = Release|Win32
+		{BE7D5367-4694-4529-817E-B4F13EB4C49A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
