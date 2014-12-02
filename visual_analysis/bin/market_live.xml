@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Feed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="http://dusk.ait.gr/SMARTEdgeNode/SMART_Datafeed_Schema_v0.3.xsd">
+	<Id>market_live</Id>
+	<Type>Virtual</Type>
+	<Title>Audio and Video processing Feed</Title>
+	<Description>The feed represents an elaborate visual analysis component from camera</Description>
+	<DescriptionTags>
+		<TextTags>camera</TextTags>
+		<URITags>smarfp7:crowd smarfp7:video</URITags>
+	</DescriptionTags>
+	<Geolocation>
+		<Longitude>-3.8106562166717595</Longitude>
+		<Latitude>43.462796296630465</Latitude>
+	</Geolocation>
+	<ContactInfo>
+		<Website>http://www.ait.edu.gr/ait_web_site/faculty/apne/pnevmatikakis.html</Website>
+		<ContactEmail>apne@ait.edu.gr</ContactEmail>
+	</ContactInfo>
+	<Components>
+		<Virtual>
+			<Name>square</Name>
+			<Description>Visual analysis component that provides crowd density and visible colours on main market square</Description>
+			<DescriptionTags>
+				<URITags>smartfp7:crowd smartfp7:colour</URITags>
+			</DescriptionTags>
+			<Type>crowd</Type>
+		</Virtual>
+		<Virtual>
+			<Name>roads</Name>
+			<Description>Visual analysis component that provides crowd density and visible colours on the two roads next to market square</Description>
+			<DescriptionTags>
+				<URITags>smartfp7:crowd smartfp7:colour</URITags>
+			</DescriptionTags>
+			<Type>crowd</Type>
+		</Virtual>
+		<Virtual>
+			<Name>sidewalks</Name>
+			<Description>Visual analysis component that provides crowd density and visible colours on the sidewalks next to market square</Description>
+			<DescriptionTags>
+				<URITags>smartfp7:crowd smartfp7:colour</URITags>
+			</DescriptionTags>
+			<Type>crowd</Type>
+		</Virtual>
+		<Virtual>
+			<Name>parking_exit</Name>
+			<Description>Visual analysis component that provides count per minute of cars passing through the exit of the parking</Description>
+			<Type>objcounter</Type>
+		</Virtual>
+		<Virtual>
+			<Name>parking_entrance</Name>
+			<Description>Visual analysis component that provides the rate of cars passing through the entrance of the parking</Description>
+			<Type>objcounter</Type>
+		</Virtual>
+	</Components>
+	<Outputs>
+		<Output>
+			<Name>obj_per_min</Name>
+			<ProducedBy>parking_exit</ProducedBy>
+			<Description>Rate of passing cars</Description>
+			<Type>double</Type>
+			<Unit>number/min</Unit>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>obj_per_min</Name>
+			<ProducedBy>parking_entrance</ProducedBy>
+			<Description>Rate of passing cars</Description>
+			<Type>double</Type>
+			<Unit>number/min</Unit>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>density</Name>
+			<ProducedBy>roads</ProducedBy>
+			<Description>Crowd density</Description>
+			<Type>double</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>density</Name>
+			<ProducedBy>sidewalks</ProducedBy>
+			<Description>Crowd density</Description>
+			<Type>double</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>density</Name>
+			<ProducedBy>square</ProducedBy>
+			<Description>Crowd density</Description>
+			<Type>double</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colournames</Name>
+			<ProducedBy>roads</ProducedBy>
+			<Description>Names of visible colours</Description>
+			<Type>array(string)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colournames</Name>
+			<ProducedBy>sidewalks</ProducedBy>
+			<Description>Names of visible colours</Description>
+			<Type>array(string)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colournames</Name>
+			<ProducedBy>square</ProducedBy>
+			<Description>Names of visible colours</Description>
+			<Type>array(string)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colourpercentages</Name>
+			<ProducedBy>roads</ProducedBy>
+			<Description>Weights of visible colours</Description>
+			<Type>array(double)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colourpercentages</Name>
+			<ProducedBy>sidewalks</ProducedBy>
+			<Description>Weights of visible colours</Description>
+			<Type>array(double)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+		<Output>
+			<Name>colourpercentages</Name>
+			<ProducedBy>square</ProducedBy>
+			<Description>Weights of visible colours</Description>
+			<Type>array(double)</Type>
+			<HasConfidence>false</HasConfidence>
+		</Output>
+	</Outputs>
+</Feed>

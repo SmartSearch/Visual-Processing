@@ -1,0 +1,40 @@
+{
+	"_id" : "2013-12-09T18:30:18.989Z",
+	"timestamp" : 1386613818989,
+	"data" :
+	{
+		"time" : "2013-12-09T18:30:18.989Z",
+		"crowd" :
+		[
+			{
+				"@ID" : "square",
+				"density" : 0.0000,
+				"colournames" : ["Gray", "Red", "Maroon", "Yellow", "Green", "Blue", "Purple"],
+				"colourpercentages" : [0.10, 0.08, 0.15, 0.06, 0.17, 0.12, 0.07]
+			},
+			{
+				"@ID" : "roads",
+				"density" : 0.0000,
+				"colournames" : ["White", "Silver", "Black", "Red", "Olive", "Navy"],
+				"colourpercentages" : [0.20, 0.15, 0.25, 0.10, 0.20, 0.05]
+			},
+			{
+				"@ID" : "sidewalks",
+				"density" : 0.0000,
+				"colournames" : ["Silver", "Gray", "Black", "Red", "Maroon", "Yellow", "Lime", "Teal", "Fuchsia"],
+				"colourpercentages" : [0.15, 0.08, 0.09, 0.07, 0.05, 0.06, 0.06, 0.09, 0.12]
+			}
+		],
+		"objcounter" :
+		[
+			{
+				"@ID" : "parking_exit",
+				"obj_per_min" : 0.00
+			},
+			{
+				"@ID" : "parking_entrance",
+				"obj_per_min" : 0.00
+			}
+		]
+	}
+}

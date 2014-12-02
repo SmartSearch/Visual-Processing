@@ -1,0 +1,26 @@
+{
+   "_id": "2013-12-09T20:02:28.270Z",
+   "_rev": "1-2017758b6e70bde58013343a7d1a196c",
+   "timestamp": 1386619348270,
+   "data": {
+       "time": "2013-12-09T20:02:28.270Z",
+       "crowd": [
+           {
+               "@ID": "townhall_square",
+               "density": 0.0192
+           },
+           {
+               "@ID": "pedestrian_left_road",
+               "density": 0.005
+           },
+           {
+               "@ID": "pedestrian_zebra_crossing",
+               "density": 0.016
+           },
+           {
+               "@ID": "car_crossing",
+               "density": 0.0344
+           }
+       ]
+   }
+}
